@@ -8,7 +8,7 @@
 		compatible = "zmk,keymap";
 
 		default {
-			bindings = < &kp K >;
+			bindings = < &kp K  &kp A >;
 		};
 	};
 };
