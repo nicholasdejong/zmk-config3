@@ -1,0 +1,5 @@
+#include "btkb.dtsi"
+
+&default_transform {
+    col-offset = <17>;
+};
