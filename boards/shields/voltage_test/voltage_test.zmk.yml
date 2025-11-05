@@ -1,5 +1,5 @@
 file_format: "1"
-id: test
+id: voltage_test
 name: Bluetooth Keyboard
 type: shield
 url: https://github.com/nicholasdejong
@@ -8,4 +8,4 @@ requires: [pro_micro]
 exposes: []
 
 features: [keys]
-siblings: [test]
+siblings: [voltage_test]
