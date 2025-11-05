@@ -1,5 +1,5 @@
 file_format: "1"
-id: btkb
+id: test
 name: Bluetooth Keyboard
 type: shield
 url: https://github.com/nicholasdejong
@@ -8,5 +8,4 @@ requires: [pro_micro]
 exposes: []
 
 features: [keys]
-siblings: [btkb_left]
-# siblings: [btkb_left, btkb_right]
+siblings: [test]
