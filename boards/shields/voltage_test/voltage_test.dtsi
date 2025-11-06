@@ -12,10 +12,9 @@
             status = "okay";
             compatible = "zmk,battery-voltage-divider";
             label = "Voltage Divider";
-            io-channels = <&adc 21>;
-            output-ohms = <100>;
-            full-ohms = <200>;
-
+            io-channels = <&adc 7>;
+            output-ohms = <1000000>;
+            full-ohms = <2000000>;
         };
 
         kscan0: kscan {
