@@ -1,2 +1,2 @@
 config SHIELD_VOLTAGE_TEST
-	def_bool $(shields_list_contains, voltage_test)
+	def_bool $(shields_list_contains,voltage_test)
