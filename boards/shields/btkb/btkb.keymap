@@ -16,6 +16,9 @@
 // Settings Layer
 #define STGS 5
 
+// Gaming Layer
+#define GMNG 6
+
 // This key is reserved when on a certain layer (probably because it is already being held!)
 #define RSRVD &none
 
@@ -86,9 +89,9 @@
 		};
 		symbol_layer {
 			bindings = <
-				&kp TILDE &kp STAR &kp AMPS &kp CARET &kp GRAVE		&kp AT  &kp EXCL &kp HASH &kp DLLR &kp PRCNT
-				&kp HOME  &kp INS  &kp DEL  &kp END   &kp   F11 	&kp F12 &kp LEFT &kp DOWN &kp UP   &kp RIGHT
-				&kp F9    &kp F8   &kp F7   &kp F6    &kp   F10		&kp F1  &kp F2   &kp F3   &kp F4   &kp F5
+				&kp TILDE &kp STAR &kp AMPS &kp CARET &kp GRAVE		&kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT
+				&kp HOME  &kp INS  &kp DEL  &kp END   &kp   F11 	&kp F12  &kp LEFT &kp DOWN &kp UP   &kp RIGHT
+				&kp F9    &kp F8   &kp F7   &kp F6    &kp   F10		&kp F1   &kp F2   &kp F3   &kp F4   &kp F5
 												 &mo STGS &none     RSRVD    &none
 			>;
 		};
@@ -101,9 +104,17 @@
 				&bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5 // Right
 				// Bottom Row
 				&none         &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none // Left
-				&none         &to CLMK      &to CTOQ      &to DFLT      &none // Right
+				&none         &to CLMK      &to CTOQ      &to DFLT      &to GMNG // Right
 				// Thumb Row
 				&none         RSRVD        &none         &none
+			>;
+		};
+		gaming {
+			bindings = <
+			   &kp ESC   &kp Q &kp W &kp E &kp R   &none &none &none &none &none
+			   &kp LSHFT &kp A &kp S &kp D &kp F   &none &none &none &none &none
+			   &kp LCTRL &kp Z &kp X &kp C &kp V   &none &none &none &none &none
+				              &kp SPACE &kp none   &to DFLT &none
 			>;
 		};
 	};
